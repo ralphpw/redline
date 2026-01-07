@@ -1,10 +1,12 @@
+[[_TOC_]]
+
 # Competitive Analysis: ChatGPT Response
 
 **Query Date:** January 7, 2026
 
 ---
 
-## Question
+# Question 1
 
 I'm researching a product concept and need to understand the competitive landscape across three specific capabilities. Please identify existing tools for each, and critically assess whether a gap exists.
 
@@ -46,7 +48,7 @@ Please be brutally honest about whether this is genuinely novel or if existing t
 
 ---
 
-## Response
+# Response 1
 
 Here’s a **brutally honest, market-tested view** of your competitive landscape across the three capabilities you care about, with real tools, real gaps, and real strategic takeaways for a potential product build.
 
@@ -239,3 +241,274 @@ No existing vendor has successfully combined these into a *single, commercial pr
 [8]: https://en.wikipedia.org/wiki/Make_%28platform%29?utm_source=chatgpt.com "Make (platform)"
 [9]: https://en.wikipedia.org/wiki/LegalOn_Technologies?utm_source=chatgpt.com "LegalOn Technologies"
 [10]: https://en.wikipedia.org/wiki/Agiloft?utm_source=chatgpt.com "Agiloft"
+
+# Question 2
+
+I'm deeply suspicious of ideas that come too easily... what am I missing. Why hasn't this been done, it seems too powerful and too obvious.
+
+# Response to Question 2
+
+Your suspicion is healthy. When something feels *obviously valuable* yet doesn’t exist, the explanation is almost never “nobody thought of it.” It’s usually **friction, risk, or misaligned incentives** that make it unattractive or infeasible *until recently*.
+
+Below is the uncomfortable, non-marketing answer to **why this hasn’t been built**, and what you’re likely underestimating.
+
+---
+
+## 1. The Hardest Part Isn’t AI — It’s **Trust Surfaces**
+
+Your concept spans **three trust-critical domains simultaneously**:
+
+1. **Authoritative documents** (contracts, policies, claims)
+2. **Operational workflows** (batch execution, approvals, audit)
+3. **Outcome-based decisioning** (win/loss learning, recommendations)
+
+Each one alone already demands:
+
+* determinism
+* explainability
+* reversibility
+* defensibility under audit or litigation
+
+**Combining them multiplies risk non-linearly.**
+
+### Example:
+
+If an AI:
+
+* edits a clause,
+* that clause gets batch-applied across 40 contracts,
+* and later loses a claim…
+
+Who is accountable?
+
+Vendors avoid this because **enterprise buyers don’t want “power” — they want *blame containment*.**
+
+This is the single biggest reason.
+
+---
+
+## 2. Enterprises Buy Software to Minimize Career Risk, Not Maximize Capability
+
+Your target users (lawyers, compliance, claims) are **career-risk-averse professionals**.
+
+A tool that:
+
+* tracks *exact diffs*,
+* logs AI decisions,
+* and *learns from outcomes*
+
+…also **creates discoverable evidence**.
+
+That scares the hell out of buyers.
+
+#### Brutal truth:
+
+Many organizations *do not want a system that proves*:
+
+* they used AI,
+* what it recommended,
+* that they ignored it,
+* or that it was wrong.
+
+They want:
+
+* plausible deniability
+* human override without trace
+* AI as “assistive fog,” not authoritative record
+
+Your product *forces epistemic honesty*. That’s culturally threatening.
+
+---
+
+## 3. Outcome Learning Is Politically Explosive Inside Organizations
+
+The moment you introduce:
+
+> “73% win rate with this argument vs Aetna”
+
+You’ve implicitly said:
+
+* Some teams perform worse than others
+* Some lawyers/adjusters make worse calls
+* Some “best practices” are empirically false
+
+This creates **internal resistance**, not excitement.
+
+Most case management tools *deliberately avoid* outcome learning because it:
+
+* destabilizes hierarchy
+* challenges senior judgment
+* creates HR and liability issues
+
+This isn’t a technical gap. It’s an **organizational psychology gap**.
+
+---
+
+## 4. Multi-Document Context Breaks Most AI Architectures in Practice
+
+Everyone *claims* multi-document understanding. Very few systems actually deliver it reliably at scale.
+
+Why?
+
+* Token limits
+* Context drift
+* Retrieval errors that are invisible to users
+* Latent contradictions across documents
+
+Now add:
+
+* diff-level precision
+* version history
+* rollback guarantees
+
+You’re in **distributed systems + knowledge representation hell**, not “just LLMs.”
+
+Most vendors quietly scope down to:
+
+> “One document at a time, best effort.”
+
+Because that’s survivable.
+
+---
+
+## 5. The UI Problem Is Brutal and Underrated
+
+You are implicitly proposing a **new primary interface paradigm**:
+
+* AI edits *in place*
+* Human edits get critiqued
+* Diffs are first-class citizens
+* History is explorable, reversible, attributable
+
+This is **much harder than chat**.
+
+Chat UIs are popular not because they’re good — but because:
+
+* they externalize ambiguity to the user
+* they avoid commitments
+* they don’t need precision affordances
+
+Your product requires **precision UX**, which is expensive, slow, and risky to get wrong.
+
+---
+
+## 6. Legal + AI = Slow Sales Cycles and Heavy Customization
+
+You’re crossing:
+
+* legal tech
+* workflow automation
+* analytics
+* AI governance
+
+That means:
+
+* 6–18 month sales cycles
+* security reviews
+* procurement hell
+* customization pressure
+* “Can you make it do *our* thing?”
+
+Most startups die here.
+
+Incumbents avoid radical changes because **their customers demand stability more than power**.
+
+---
+
+## 7. The Market Has Been Waiting for 3 Things That Only Recently Converged
+
+This is the “why now” — and also why it still hasn’t fully landed:
+
+1. **LLMs that can follow structured editing instructions**
+   (pre-2023 models were too chaotic)
+2. **Cheaper inference for batch workflows**
+3. **Cultural normalization of AI in regulated work**
+
+Even now, we’re barely over the threshold where this is feasible — not comfortable.
+
+---
+
+## 8. The Unspoken Truth: This Is More Platform Than Product
+
+What you’re describing is not:
+
+* a feature
+* a tool
+* a plugin
+
+It’s a **work substrate** for high-stakes knowledge work.
+
+That means:
+
+* long time to value
+* high switching costs
+* heavy onboarding
+* deep domain modeling
+
+Most founders (and VCs) prefer:
+
+> “Something narrow we can sell in 90 days.”
+
+Your idea resists that.
+
+---
+
+## 9. The Real Risk: You May Be Building Something People *Say* They Want but Quietly Avoid Using
+
+There is a real danger that:
+
+* buyers praise the vision,
+* pilots go well,
+* but usage plateaus
+
+Because full transparency + accountability + learning systems:
+
+* remove wiggle room
+* surface uncomfortable truths
+* force process discipline
+
+Power cuts both ways.
+
+---
+
+## So What Are You *Actually* Missing?
+
+You’re not missing intelligence or imagination.
+
+You may be underestimating:
+
+1. **Institutional resistance**
+2. **Blame economics**
+3. **UI complexity**
+4. **Sales friction**
+5. **The cost of being “right” in regulated environments**
+
+---
+
+## Final, Brutally Honest Take
+
+This hasn’t been built not because it’s a bad idea — but because it is:
+
+* **Too exposing**
+* **Too accountable**
+* **Too interdisciplinary**
+* **Too honest**
+
+Those are not market advantages by default.
+
+They only become advantages if you:
+
+* wedge into a narrow use case first
+* align with incentives (risk reduction, not just performance)
+* let users *opt into* accountability gradually
+* and sell *safety*, not power
+
+If you try to build “the full vision” out of the gate, it will likely fail.
+
+If you sequence it carefully, it could become **infrastructure for how serious knowledge work gets done**.
+
+If you want, next we can:
+
+* identify the *least politically dangerous wedge*
+* map where incumbents will ignore you
+* or stress-test where this dies in procurement conversations

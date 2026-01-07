@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 # Competitive Analysis: Perplexity Response
 
 **Query Date:** January 7, 2026
@@ -224,3 +226,103 @@ Sustainable differentiation would come from **tight integration of data, workflo
 [17](https://www.salesmate.io/blog/workflow-automation-examples/)
 [18](https://legal.thomsonreuters.com/blog/artificial-intelligence-and-law-guide/)
 [19](https://briefpoint.ai/2024/03/)
+
+# Question 2
+
+I'm deeply suspicious of ideas that come too easily... what am I missing. Why hasn't this been done, it seems too powerful and too obvious.
+
+# Response to Question 2
+
+There are good reasons this *hasn’t* shown up as a clean, dominant product yet: the idea is powerful, but collides with workflow friction, liability and regulatory risk, data fragmentation, and very ugly implementation details in law/claims environments.[1][2][3][4][5][6][7]
+
+***
+
+## 1. Workflow and change‑management friction
+
+Even when tools look obviously valuable on paper, law and insurance are slow adopters if they disturb entrenched workflows.
+
+- Many firms struggle to adopt even “simple” AI copilots because they do not fit how lawyers actually draft, review, and bill; when AI tools feel like extra steps or side systems, lawyers ignore them.[4][7][1]
+- Surveys show high theoretical enthusiasm for AI but large portions of legal teams still lack formal AI processes, governance, and training, which stalls more ambitious, workflow‑heavy products.[3][7][4]
+
+Your concept is not a toy plugin; it rewires how matters and claims are run, which is exactly the kind of thing that triggers slow, cautious adoption and long sales cycles.
+
+***
+
+## 2. Liability, regulation, and “black box” risk
+
+What you’re proposing moves AI from “helper” to “decision‑shaping system”, which regulators and risk officers treat very differently.
+
+- Insurers already face specific AI governance expectations (NAIC model bulletin, state rules) that demand explainability, documentation, and non‑discrimination; they remain accountable even when using third‑party AI tools.[2][5][6]
+- Legal departments cite compliance, regulatory, and ethical risk as primary barriers; fears about hallucinations, bias, and confidentiality make them cautious about AI systems deeply embedded in case decisions.[8][9][3]
+- A system that says “73% win rate vs Aetna with this argument” looks like a statistical decision aid; if the underlying data or model is challenged in court or by regulators, you must be able to justify methodology and avoid discriminatory patterns.[5][6][2]
+
+That makes vendors conservative: doing full outcome‑based recommendations is not just a product problem; it’s a legal, actuarial, and reputational one.
+
+***
+
+## 3. Data fragmentation and outcome modeling is hard
+
+The “obvious” loop you describe (documents → arguments → outcomes → better strategies) is conceptually clean but ugly in real data.
+
+- Outcome labels are noisy: settlement vs trial, partial wins, jurisdiction differences, policy wording changes, and negotiation dynamics all muddy “who won and why”.
+- The relevant data live in multiple systems: DMS, email, claims core, matter management, billing, maybe external counsel; many firms and carriers still struggle to get clean, unified datasets even for reporting, let alone ML.[6][3][4]
+- Mapping “arguments” and “approaches” into structured, comparable features across thousands of cases is an open modeling problem; most current tools stop at simpler analytics (time, cost, volume, risk score) rather than opponent‑argument success matrices.
+
+So far, most players take the low‑hanging fruit (summaries, classification, document drafting) because those are ROI‑obvious and data‑light.
+
+***
+
+## 4. Integration cost vs. clear ROI
+
+Your idea spans editor, workflow engine, case system, and analytics engine. Each of those is usually a different category and vendor.
+
+- Firms and insurers are already fatigued by siloed tools; analysts note that AI layered on top of existing systems often increases complexity unless tightly integrated with core platforms.[10][7][4]
+- To displace or sit alongside entrenched practice/claims/case systems, you must integrate deeply (DMS, core claims, billing, SSO, records policies). That is slow, expensive, and often requires custom work per big customer.
+- Buyers need clear, quantified ROI that justifies such disruption; many are still experimenting at the “copilot for drafting” level and haven’t yet demanded a fully unified, outcome‑driven system.[7][3][4]
+
+In other words, it may not be built yet because it’s a *big* platform project with platform‑size implementation pain, and most vendors started with narrower wedges.
+
+***
+
+## 5. Vendor strategy and local incentives
+
+Even strong incumbents are not always structurally motivated to build what you’re imagining.
+
+- Document management vendors optimize for repository, search, and basic AI helpers; becoming an outcome‑learning platform is outside their current product and risk envelope.
+- Claims core and matter‑management vendors are often slow‑moving, with on‑prem or legacy architectures; they add AI features incrementally rather than rethinking their systems around AI workflows.
+- Legal AI startups have, so far, found it easier to sell “better drafting and review” than to own the whole case lifecycle; outcome‑driven, workflow‑native platforms are a harder sell and require longer time horizons.
+
+So the idea can look obvious at the whiteboard, but crosses at least three incumbent product boundaries and go‑to‑market cultures.
+
+***
+
+## 6. What this implies for you (and your suspicion)
+
+Your suspicion is healthy: any idea that looks trivially obvious *as a feature* usually already exists. The nuance here:
+
+- As *features*, your three capabilities are indeed on many roadmaps and partially implemented in different silos.
+- As an integrated **platform** that:
+  - Treats AI edits as tracked diffs across multi‑document projects,
+  - Lets non‑technical staff build and batch AI workflows with full cost/audit visibility,
+  - And closes the loop with opponent‑ and argument‑level outcome learning,
+  this is still uncommon because it is **cross‑silo, high‑risk, and data‑hungry**, not because people have never thought of it.
+
+The “too obvious” part is the conceptual diagram. What you are missing—but now can explicitly plan for—is that the hardest work is:
+
+- Data plumbing and schema design across systems.
+- Governance, explainability, and regulatory alignment.
+- Deep, opinionated UX that actually fits how lawyers and claims teams behave day to day.
+- A GTM strategy that lands a narrow, high‑value wedge first, then earns the right to expand toward the full vision.
+
+If you go forward, the defensibility is not that others haven’t had the idea, but that very few are willing to take on the combination of technical, regulatory, and workflow complexity needed to *make it actually work* in production environments.
+
+[1](https://imanage.com/ai-confidence/ai-adoption-in-legal-if-it-doesn-t-fit-the-workflow-it-won-t-build-ai-confidence/)
+[2](https://www.zwillgen.com/publication/insurers-new-rules-ai-claims-process/)
+[3](https://www.axiomlaw.com/blog/ai-in-legal-departments-promise-meets-reality)
+[4](https://www.clio.com/blog/legal-ai-adoption-curve/)
+[5](https://www.rmmagazine.com/articles/article/2025/02/19/trends-in-ai-insurance-coverage-and-claims-handling)
+[6](https://www.deloitte.com/us/en/insights/industry/financial-services/scaling-gen-ai-insurance.html)
+[7](https://www.bestlawfirms.com/articles/the-ai-adoption-curve-in-law/6934)
+[8](https://gableslawfirm.com/2024/10/legal-issues-with-artificial-intelligence-ai/)
+[9](https://www.mycase.com/blog/ai/ai-legal-issues/)
+[10](https://news.bloomberglaw.com/bloomberg-law-analysis/analysis-ai-in-law-firms-2024-predictions-2025-perceptions)
