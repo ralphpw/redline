@@ -1,5 +1,14 @@
 # Redline
 
+> *"I have made this longer than usual because I have not had time to make it shorter."*  
+> — **Blaise Pascal**, 1657
+
+Quality requires iteration. Iteration requires seeing what changed.
+
+Current AI tools give you a new draft and throw away the old one. **Redline makes every iteration visible, reviewable, and reversible.**
+
+---
+
 > **"AI superpowers for non-technical professionals"**
 
 Redline gives knowledge workers the same AI + version control capabilities that developers have — without the technical complexity.

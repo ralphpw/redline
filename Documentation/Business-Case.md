@@ -4,6 +4,31 @@
 
 ---
 
+## The Philosophical Foundation
+
+> *"I have made this longer than usual because I have not had time to make it shorter."*  
+> — **Blaise Pascal**, 1657
+
+**Quality requires iteration.** Great writing, contracts, specifications — they're not written, they're *rewritten*. 
+
+But iteration only works if you can see what changed:
+
+| What quality requires | What current AI tools offer |
+|----------------------|----------------------------|
+| Multiple drafts | One-shot generation |
+| Iterative refinement | "Regenerate" (lose previous) |
+| Seeing what changed | Black box output |
+| Building on previous version | Start fresh each time |
+| "What did I cut?" | No history |
+
+**Pascal's paradox:** Making something shorter (better) takes more time — more iterations, more refinement, more review.
+
+**Current AI tools break this:** They give you a new draft and throw away the old one. There's no way to see what improved, what regressed, what was lost.
+
+**Redline fixes this:** Every iteration is a commit. Every change is visible. Refinement becomes systematic.
+
+---
+
 ## The Problem
 
 Knowledge workers (lawyers, BAs, compliance officers, technical writers) collaborate on complex document sets where:
