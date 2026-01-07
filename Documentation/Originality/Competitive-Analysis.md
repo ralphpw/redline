@@ -160,6 +160,99 @@
 
 ---
 
+## Why This Hasn't Been Built: The Top 5 Barriers
+
+*Cross-validated across ChatGPT, Grok, and Perplexity responses to "Why hasn't this been done?"*
+
+### 1. Trust Surfaces & Blame Economics
+
+> *"Enterprises buy software to minimize career risk, not maximize capability."* — ChatGPT
+
+The product creates **discoverable evidence** of AI decisions, who overrode them, and what outcomes resulted. Many organizations actively *don't want this*.
+
+| What Redline Does | Why It Scares Buyers |
+|-------------------|---------------------|
+| Tracks exact diffs | Proves AI was used |
+| Logs AI decisions | Shows what it recommended |
+| Records overrides | Documents who ignored it |
+| Outcome learning | Reveals when AI was right |
+
+**Implication:** Accountability is a double-edged sword. Sell *safety*, not just power.
+
+### 2. File Format Hell
+
+All three sources agree: Git + diffs work beautifully for text. But lawyers live in Word/PDF.
+
+| Format | Diff Quality | Round-Trip Editing | Reality |
+|--------|--------------|-------------------|---------|
+| Markdown | ✅ Perfect | ✅ Trivial | Narrow audience |
+| Word (.docx) | ⚠️ Messy | ⚠️ "Unsolved at scale" | Where users live |
+| PDF | ❌ Read-only | ❌ Nightmarish | Common input format |
+| JSON/YAML | ✅ Good | ✅ Good | Technical configs |
+
+**Implication:** Start with Markdown-friendly verticals, or accept format conversion friction.
+
+### 3. Outcome Learning Is Politically Explosive
+
+> *"The moment you introduce '73% win rate vs Aetna,' you've implicitly said some teams perform worse than others."* — ChatGPT
+
+| What Outcome Data Reveals | Internal Reaction |
+|---------------------------|-------------------|
+| Team performance variance | Destabilizes hierarchy |
+| Individual judgment gaps | Creates HR issues |
+| "Best practices" that don't work | Challenges senior authority |
+| Objective success metrics | Removes wiggle room |
+
+**Implication:** Most case management tools *deliberately avoid* this. It's not a technical gap—it's an organizational psychology gap.
+
+### 4. Multi-System Data Plumbing
+
+Outcome data doesn't live in one place:
+
+```
+DMS → Email → Claims Core → Matter Management → Billing → External Counsel
+                          ↓
+                   (All disconnected)
+                          ↓
+               "Nobody has clean datasets"
+```
+
+Mapping "arguments" and "approaches" to structured, comparable features across thousands of cases is an **open modeling problem** nobody has cracked commercially.
+
+**Implication:** The "obvious" outcome learning loop is conceptually clean but ugly in real data.
+
+### 5. It's a Platform, Not a Feature
+
+> *"Your idea crosses at least three incumbent product boundaries."* — Perplexity
+
+| Boundary | Current Owner | Why They Won't Build It |
+|----------|---------------|------------------------|
+| Document editing | Microsoft Word | Risk-averse, siloed teams |
+| Workflow automation | Zapier/Make | No document depth |
+| Case/matter management | Clio/Relativity | Legacy architecture |
+| Outcome analytics | CLARA/Darrow | Different product vision |
+
+**Implication:** Big vendors won't build this (not their risk profile). Startups die in the 18-month sales cycle trying to sell a platform.
+
+---
+
+### What This Means for Defensibility
+
+The moat isn't the idea—it's **willingness to take on the combination of technical, regulatory, and workflow complexity**.
+
+> *"The barrier to entry is high enough that clean execution could create real defensibility."* — Grok
+
+| Barrier | Severity | Improving? |
+|---------|----------|------------|
+| File format diffs | Very High | Slowly |
+| Hallucination in high-stakes domains | High | Yes, but not there yet |
+| UX: hiding Git without losing power | High | Some progress |
+| Cost/latency of large-context LLM | Medium | Rapidly improving |
+| Enterprise sales cycles | Medium | Depends on GTM |
+| User willingness to learn new workflow | Medium | Biggest long-term risk |
+
+---
+
 ## Emerging Threats (12-18 month window)
 
 | Competitor | Threat Level | What to Watch |
