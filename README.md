@@ -2,7 +2,11 @@
 
 > **"AI-powered document editing with redline review"**
 
-A tool for human + AI peer collaboration on complex multi-document projects, with bi-directional diff review and full version history.
+A tool for human + AI collaboration on complex multi-document projects, with bi-directional diff review and full version history.
+
+**Two modes:**
+- **Collaboration** — Human + AI as co-authors, iterative editing, real-time review
+- **Automation** — AI pipeline execution with human oversight, ticket-driven, auditable
 
 ---
 
